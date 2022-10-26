@@ -23,3 +23,36 @@
 | [97, 98]   | [197, 198] | 0      |
 | [131, 132] | [211, 212] | 1      |
 | [99, 102]  | [211, 212] | -1     |
+
+## 🚩 기능 목록
+
+- function isException(pages): 주어진 케이스가 예외사항인지 확인한다. pages는 pobi 혹은 crong을 받기 위한 변수이다.
+
+  - 아래 조건 중 하나라도 포함된다면 예외사항이다.
+    - 양 쪽 페이지 번호 중 하나라도 숫자가 아닌 것이 있을 경우.
+    - 왼쪽페이지 번호와 오른쪽 페이지 번호 중 하나라도 1보다 크고 400보다 작은 범위 조건에 부합하지 않을 경우.
+    - 왼쪽 페이지 번호가 짝수이거나, 오른쪽 페이지 번호가 홀수인 경우.
+    - '왼쪽 페이지 번호 + 1 = 오른쪽 페이지 번호'라는 식이 성립하지 않을 경우.
+  - 예외사항일 경우 true를, 아닐 경우 false를 return한다.
+
+- function sumDigits(pageNumber): 페이지 번호의 자리수 별로 더한다.
+
+  - 초기값이 0인 sum이라는 변수를 준비한다.
+  - 주어진 숫자가 0이 될 때까지 10으로 나눠, 그 때마다 나머지를 sum에 더한다.
+
+- function multiplyDigits(pageNumber): 페이지 번호의 자리수 별로 곱한다.
+
+  - 초기값이 1인 product라는 변수를 준비한다.
+  - 주어진 숫자가 0이 될 때까지 10으로 나눠, 그 때마다 나머지를 product에 곱한다.
+
+- function getScore(pages): 참가자의 점수를 구한다. pages는 pobi 혹은 crong을 받기 위한 변수이다.
+
+  - 왼쪽과 오른쪽 페이지 번호를 각각 sumDigits와 multiplyDigits로 계산한다.
+  - 네 가지 경우 중 가장 큰 수를 return 한다.
+
+- function problem1(pobi, crong): 문제를 푼다.
+
+  - isException 함수를 pobi와 crong에 대해 실행한다. 만약 true가 return되면 -1을 return 한다.
+  - getScore를 pobi와 crong에 대해 실행한다.
+  - pobi의 점수와 crong의 점수가 같을 경우 0을 return 한다.
+  - 그렇지 않을 경우 중, pobi의 점수가 더 크다면 1을, 그렇지 않다면 2를 return 한다.
