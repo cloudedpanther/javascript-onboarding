@@ -39,5 +39,3 @@
 - function multiplyDigits: 페이지 번호를 받아 자리수 별로 곱한 수를 return한다.
 
 - function getScore: 참가자의 점수를 구하여 return한다.
-
-- function problem1: 문제를 푼다.
