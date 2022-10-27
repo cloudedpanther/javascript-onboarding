@@ -1,6 +1,10 @@
 function problem1(pobi, crong) {
-  var answer;
-  return answer;
+  if (isException(pobi) || isException(crong)) return -1;
+
+  const pobiScore = getScore(pobi);
+  const crongScore = getScore(crong);
+
+  return pobiScore !== crongScore ? (pobiScore > crongScore ? 1 : 2) : 0;
 }
 
 function isException(pages) {
