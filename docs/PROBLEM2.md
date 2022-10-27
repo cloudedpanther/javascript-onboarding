@@ -24,6 +24,4 @@
 
 ## 🚩 기능 목록
 
-- class stack: 스택을 정의한다.
-
 - function eraseConsecutiveChars: 문자열을 받아 중복 문자들을 제거한 뒤 return한다. 중복 문자들을 삭제한 뒤 새로 생기는 중복 문자들은 삭제하지 않는다.
