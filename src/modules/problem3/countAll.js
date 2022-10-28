@@ -11,6 +11,7 @@ function countAll(number) {
   const digitLevel = number.toString().length;
   const frontDigit = Math.floor(number / Math.pow(10, digitLevel - 1));
   const nextNumber = number % Math.pow(10, digitLevel - 1);
+
   let count = 0;
   for (let i = 1; i < digitLevel; i++) {
     count += countByAllDigits(i);
