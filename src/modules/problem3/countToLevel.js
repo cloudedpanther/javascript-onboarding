@@ -7,3 +7,5 @@ function countToLevel(level) {
   }
   return clapsToLevel;
 }
+
+module.exports = countToLevel;
