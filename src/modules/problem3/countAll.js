@@ -16,3 +16,5 @@ function countAll(number, clapsToLevel) {
 
   return count;
 }
+
+module.exports = countAll;
