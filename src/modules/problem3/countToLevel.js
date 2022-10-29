@@ -1,5 +1,5 @@
 function countToLevel(level) {
-  if (level < 1) return -1;
+  if (level < 1) return [];
 
   const clapsToLevel = [3];
   for (let i = 1; i < level; i++) {
